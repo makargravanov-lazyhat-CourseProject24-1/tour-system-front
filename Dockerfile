@@ -12,4 +12,4 @@ COPY . .
 
 USER nodejs:nodejs
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npx", "vite"]
