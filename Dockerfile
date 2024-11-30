@@ -10,7 +10,7 @@ RUN chown nodejs -R /home/nodejs
 
 COPY package*.json ./
 
-RUN npm install --production
+RUN npm install --omit=dev
 
 COPY . .
 
