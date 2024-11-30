@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Publish"){
             steps {
-                sh "ls"
+                sh "cp ./dist /tour-system-front"
             }
         }
     }
