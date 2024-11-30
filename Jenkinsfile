@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Publish"){
             steps {
-                sh "sudo cp ./dist/* /tour-system-front"
+                sh "sudo cp -r ./dist/* /tour-system-front"
             }
         }
     }
