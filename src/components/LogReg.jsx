@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import './LogReg.css';
+import classes from './LogReg.module.css';
 import {useNavigate} from "react-router-dom";
 
 export const LogReg = () => {
@@ -137,23 +137,23 @@ export const LogReg = () => {
 
     return (
         <div>
-            <div className={"background"}>
+            <div className={classes.background}>
             </div>
             {!isFormVisible && (
-                <div className="container">
-                    <div className={'jettours'}>Напишите свою историю вместе с JetTours</div>
-                    <div className="typing-text">
+                <div className={classes.container}>
+                    <div className={classes.jettours}>Напишите свою историю вместе с JetTours</div>
+                    <div className={classes.typingtext}>
                         {displayedText}
                         <span className={`cursor ${cursorVisible ? 'visible' : ''}`}>|</span>
                     </div>
-                    <button className="join-button" onClick={handleJoinClick}>Присоединиться</button>
+                    <button className={classes.joinbutton} onClick={handleJoinClick}>Присоединиться</button>
                 </div>
             )}
             {isFormVisible && (
-                <div className="container">
+                <div className={classes.container}>
                     {isRegistering ? (
-                        <div className="register-form">
-                            <div className="jettours">Регистрация</div>
+                        <div className={classes.registerform}>
+                            <div className={classes.jettours}>Регистрация</div>
                             <input
                                 type="text"
                                 placeholder="Имя"
@@ -210,8 +210,8 @@ export const LogReg = () => {
                             <button onClick={toggleForm}>Уже есть аккаунт? Войти</button>
                         </div>
                     ) : (
-                        <div className="login-form">
-                            <div className="jettours">Вход</div>
+                        <div className={classes.loginform}>
+                            <div className={classes.jettours}>Вход</div>
                             <input
                                 type="email"
                                 placeholder="Email"
@@ -231,8 +231,8 @@ export const LogReg = () => {
                 </div>
             )}
             {showSuccessModal && (
-                <div className="modal">
-                    <div className="modal-content">
+                <div className={classes.modal}>
+                    <div className={classes.modalcontent}>
                         <h2>Регистрация успешна!</h2>
                         <button onClick={() => {
                             setShowSuccessModal(false);

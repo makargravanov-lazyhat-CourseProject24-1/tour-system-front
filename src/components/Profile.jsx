@@ -1,5 +1,5 @@
 import {Navigate, useLocation} from 'react-router-dom';
-import './Profile.css';
+import classes from './Profile.module.css';
 
 export const Profile = () => {
     const location = useLocation();
@@ -20,17 +20,17 @@ export const Profile = () => {
 
     return (
 
-        <div className="layout-container">
-            <header className="top-bar">
-                <button className="logout-btn">Выйти</button>
+        <div className={classes.layoutcontainer}>
+            <header className={classes.topbar}>
+                <button className={classes.logoutbtn}>Выйти</button>
             </header>
 
-            <div className="sub-header">
+            <div className={classes.subheader}>
 
             </div>
 
-            <div className="main-content">
-                <nav className="side-menu">
+            <div className={classes.maincontent}>
+                <nav className={classes.sidemenu}>
                     <ul>
                         <li>
                             <button>Мои билеты</button>
@@ -53,65 +53,65 @@ export const Profile = () => {
                     </ul>
                 </nav>
 
-                <div className="profile-section">
-                    <div className="profile-header">
+                <div className={classes.profilesection}>
+                    <div className={classes.profileheader}>
                         <h1>Информация профиля</h1>
-                        <button className="edit-btn">Редактировать</button>
+                        <button className={classes.editbtn}>Редактировать</button>
                     </div>
-                    <div className="profile-info">
-                        <div className="info-group">
+                    <div className={classes.profileinfo}>
+                        <div className={classes.infogroup}>
                             <h2>Основная информация</h2>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Имя:</label>
                                 <span>{getValue(profileData.firstName)}</span>
                             </div>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Фамилия:</label>
                                 <span>{getValue(profileData.lastName)}</span>
                             </div>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Отчество:</label>
                                 <span>{getValue(profileData.middleName)}</span>
                             </div>
                         </div>
 
-                        <div className="info-group">
+                        <div className={classes.infogroup}>
                             <h2>Контактные данные</h2>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Email:</label>
                                 <span>{getValue(profileData.email)}</span>
-                                <span className="verification-status">
+                                <span className={classes.verificationstatus}>
                                 <div
-                                    className={`verification-status-data ${profileData.emailVerified ? 'verified' : 'not-verified'}`}>
+                                    className= {profileData.emailVerified ? classes.verified : classes.notverified}>
                                     {profileData.emailVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
                                 </div>
                             </span>
                             </div>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Телефон:</label>
                                 <span>{getValue(profileData.phone)}</span>
-                                <span className="verification-status">
+                                <span className={classes.verificationstatus}>
                                 <div
-                                    className={`verification-status-data ${profileData.phoneVerified ? 'verified' : 'not-verified'}`}>
+                                    className={profileData.phoneVerified ? classes.verified : classes.notverified}>
                                     {profileData.phoneVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
                                 </div>
                             </span>
                             </div>
                         </div>
 
-                        <div className="info-group">
+                        <div className={classes.infogroup}>
                             <h2>Паспортные данные</h2>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Серия:</label>
                                 <span>{getValue(profileData.passportSeries)}</span>
                             </div>
-                            <div className="info-item">
+                            <div className={classes.infoitem}>
                                 <label>Номер:</label>
                                 <span>{getValue(profileData.passportNumber)}</span>
                             </div>
                         </div>
 
-                        <div className="info-item">
+                        <div className={classes.infoitem}>
                             <label>Дата регистрации:</label>
                             <span>{formatDate(profileData.createdAt)}</span>
                         </div>

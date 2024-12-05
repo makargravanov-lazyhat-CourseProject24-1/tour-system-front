@@ -1,40 +1,40 @@
-.layout-container {
+.layoutcontainer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
 }
 
-.top-bar {
+.topbar {
     background-color: #020202;
     padding: 5px 10px;
     display: flex;
     justify-content: flex-end;
 }
 
-.sub-header {
+.subheader {
     background-color: #17171A;
     height: 40px;
 }
 
-.main-content {
+.maincontent {
     background-color: #1F1F23;
     display: flex;
     flex: 1;
 }
 
-.side-menu {
+.sidemenu {
     width: 250px;
     padding: 20px;
 }
 
-.side-menu ul {
+.sidemenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.side-menu button {
+.sidemenu button {
     width: 100%;
     text-align: left;
     padding: 8px 15px;
@@ -45,23 +45,23 @@
     font-size: 14px;
 }
 
-.side-menu button:hover {
+.sidemenu button:hover {
     background-color: #353535;
 }
 
-.profile-section {
+.profilesection {
     flex: 1;
     padding: 20px;
 }
 
-.profile-header {
+.profileheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.edit-btn {
+.editbtn {
     background-color: #1F1F23;
     color: #ccc;
     border: none;
@@ -69,11 +69,11 @@
     font-size: 14px;
 }
 
-.edit-btn:hover {
+.editbtn:hover {
     background-color: #353535;
 }
 
-.logout-btn {
+.logoutbtn {
     background-color: #020202;
     color: #ccc;
     border: none;
@@ -82,13 +82,11 @@
     font-size: 14px;
 }
 
-.logout-btn:hover {
+.logoutbtn:hover {
     background-color: #252525;
 }
 
 button {
-    border-radius: .66rem;
-    height: 20px;
     font-size: 14px;
     transition: background-color 0.2s ease;
 }
@@ -97,56 +95,56 @@ h1 {
     font-size: 25px;
     color: #1ecd97;
 }
-.info-group {
+.infogroup {
     margin-bottom: 30px;
     border-bottom: 1px solid #1ecd97;
     padding-bottom: 20px;
 }
 
 
-.info-group h2 {
+.infogroup h2 {
     color: #1ecd97;
     font-size: 1.2em;
     margin-bottom: 15px;
 }
 
 
-.info-item {
+.infoitem {
     display: flex;
     margin-bottom: 15px;
     align-items: center;
 }
 
 
-.info-item label {
+.infoitem label {
     min-width: 200px;
     color: #888;
 }
 
 
-.info-item span {
+.infoitem span {
     color: #fff;
 }
 
-.info-item label {
+.infoitem label {
     font-size: 14px;
 }
 
-.info-item span {
+.infoitem span {
     font-size: 14px;
 }
-.verification-status {
+.verificationstatus {
     margin-left: 10px;
     font-size: 0.9em;
 }
-.verification-status-data {
+.verificationstatusdata {
     color: #fff;
 }
 .verified {
     color: #1ecd97;
 }
 
-.not-verified {
+.notverified {
     color: #cd1e1e;
 }
 

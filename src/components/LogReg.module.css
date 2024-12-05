@@ -37,7 +37,7 @@
     font-size: 30px;
     color: #eaeac0;
 }
-.join-button {
+.joinbutton {
     z-index: 2;
     font-size: 18px;
     cursor: pointer;
@@ -55,7 +55,7 @@ input {
 
 }
 
-.register-form, .login-form {
+.registerform, .loginform {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,12 +86,12 @@ button:hover {
     background-color: #1e76cd;
 }
 
-.typing-text {
+.typingtext {
     font-size: 16px;
     color: white;
     line-height: 1.5;
 }
-.last-symbol{
+.lastsymbol{
     font-size: 16px;
     color: #1ecd97;
     line-height: 1.5;
@@ -126,14 +126,14 @@ button:hover {
     z-index: 1000;
 }
 
-.modal-content {
+.modalcontent {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
 
-.modal-content h2 {
+.modalcontent h2 {
     color: #1ecd97;
     margin-bottom: 20px;
 }
