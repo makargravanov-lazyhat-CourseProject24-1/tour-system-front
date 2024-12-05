@@ -92,7 +92,37 @@ button {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
+    color: #1ecd97;
+}
+.info-group {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1ecd97;
+    padding-bottom: 20px;
+}
+
+
+.info-group h2 {
+    color: #1ecd97;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+
+.info-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+
+.info-item label {
+    min-width: 200px;
+    color: #888;
+}
+
+
+.info-item span {
     color: #fff;
 }
 
