@@ -56,7 +56,7 @@ export const Profile = () => {
                             <label>Телефон:</label>
                             <span>{getValue(profileData.phone)}</span>
                             <span className="verification-status"
-                                  color={profileData.profileData.emailVerified ? "#1ecd97" : "#cd1e1e"}>
+                                  color={profileData.profileData.phoneVerified ? "#1ecd97" : "#cd1e1e"}>
                                 {profileData.phoneVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
                             </span>
                         </div>
