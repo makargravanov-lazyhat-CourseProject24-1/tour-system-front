@@ -7,18 +7,18 @@
 
 .top-bar {
     background-color: #020202;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     justify-content: flex-end;
 }
 
 .sub-header {
-    background-color: rgba(32, 32, 34, 0.71);
+    background-color: #17171A;
     height: 40px;
 }
 
 .main-content {
-    background-color: rgb(55, 55, 58);
+    background-color: #1F1F23;
     display: flex;
     flex: 1;
 }
@@ -62,7 +62,7 @@
 }
 
 .edit-btn {
-    background-color: rgb(39, 39, 48);
+    background-color: #1F1F23;
     color: #ccc;
     border: none;
     padding: 8px 15px;
@@ -78,6 +78,7 @@
     color: #ccc;
     border: none;
     padding: 3px 5px;
+    margin-left: 80%;
     font-size: 14px;
 }
 
