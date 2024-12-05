@@ -64,6 +64,7 @@
 }
 
 .editbtn {
+    margin-left: 30%;
     border-radius: .66rem;
     height: 20px;
     background-color: #1F1F23;
