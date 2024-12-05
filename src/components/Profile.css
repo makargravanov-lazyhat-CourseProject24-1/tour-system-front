@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgba(23, 26, 32, 0.41);
+    background-color: rgb(0, 0, 0);
 }
 
 .top-bar {
@@ -20,13 +20,13 @@
 }
 
 .main-content {
+    background-color: rgb(39, 39, 48);
     display: flex;
     flex: 1;
 }
 
 .side-menu {
     width: 250px;
-    background-color: rgba(23, 26, 32, 0.41);
     padding: 20px;
 }
 
