@@ -10,17 +10,15 @@
     padding: 10px 20px;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid #333;
 }
 
 .sub-header {
-    background-color: rgba(11, 11, 18, 0.71);
+    background-color: rgba(32, 32, 34, 0.71);
     height: 40px;
-    border-bottom: 1px solid #333;
 }
 
 .main-content {
-    background-color: rgb(39, 39, 48);
+    background-color: rgb(55, 55, 58);
     display: flex;
     flex: 1;
 }
