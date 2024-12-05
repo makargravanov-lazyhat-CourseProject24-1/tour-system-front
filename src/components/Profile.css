@@ -2,10 +2,58 @@
     min-height: 100vh;
     background-color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 0;
     font-family: 'JetBrains Mono', monospace;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #1ecd97;
+}
+
+.sidebar-header {
+    color: #1ecd97;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-buttons button {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn {
+    margin-top: auto !important;
+    border-color: #cd1e1e !important;
+    color: #cd1e1e !important;
+}
+
+.logout-btn:hover {
+    background-color: #cd1e1e !important;
+    color: white !important;
+}
+
+.profile-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
 }
 
 .profile-card {
@@ -15,6 +63,7 @@
     width: 100%;
     max-width: 800px;
     color: #fff;
+    margin-top: 20px;
 }
 
 .profile-card h1 {
@@ -63,4 +112,27 @@
 
 .not-verified {
     color: #cd1e1e;
+}
+
+button {
+    margin: 7px auto;
+    padding: 10px 20px;
+    box-sizing: content-box;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid #1ecd97;
+    border-radius: 40px;
+    color: #1ecd97;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(0,0,0,0);
+    -webkit-transition: background-color .3s cubic-bezier(0,0,0,0),color .3s cubic-bezier(0,0,0,0),width .3s cubic-bezier(0,0,0,0),border-width .3s cubic-bezier(0,0,0,0),border-color .3s cubic-bezier(0,0,0,0);
+    transition: background-color .3s cubic-bezier(0,0,0,0),color .3s cubic-bezier(0,0,0,0),width .3s cubic-bezier(0,0,0,0),border-width .3s cubic-bezier(0,0,0,0),border-color .3s cubic-bezier(0,0,0,0);
+    font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    display: block;
+}
+button:hover {
+    background-color: #1e76cd;
 }
