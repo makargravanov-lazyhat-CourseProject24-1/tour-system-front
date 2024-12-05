@@ -12,17 +12,20 @@ export const Profile = () => {
     }
 
     const formatDate = (dateString) => {
+
+        if (!dateString) return 'Не заполнено';
+        return new Date(dateString).toLocaleString();
+    };
+
+    const getValue = (value) => {
         if (profileData.emailVerified) {
             emailVerifiedColor = "#cd1e1e"
         }
         if (profileData.phoneVerified) {
             phoneVerifiedColor = "#cd1e1e"
         }
-        if (!dateString) return 'Не заполнено';
-        return new Date(dateString).toLocaleString();
-    };
-
-    const getValue = (value) => value || 'Не заполнено';
+        return value || 'Не заполнено';
+    }
 
     return (
         <div className="profile-container">
@@ -31,10 +34,6 @@ export const Profile = () => {
                 <div className="profile-info">
                     <div className="info-group">
                         <h2>Основная информация</h2>
-                        <div className="info-item">
-                            <label>ID:</label>
-                            <span>{getValue(profileData.id)}</span>
-                        </div>
                         <div className="info-item">
                             <label>Имя:</label>
                             <span>{getValue(profileData.firstName)}</span>
