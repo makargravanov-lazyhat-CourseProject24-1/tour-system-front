@@ -1,5 +1,4 @@
-
-import { useLocation, Navigate } from 'react-router-dom';
+import {Navigate, useLocation} from 'react-router-dom';
 import './Profile.css';
 
 export const Profile = () => {
@@ -9,14 +8,14 @@ export const Profile = () => {
     let phoneVerifiedColor = "#1ecd97"
 
     if (!profileData) {
-        return <Navigate to="/" />;
+        return <Navigate to="/"/>;
     }
 
     const formatDate = (dateString) => {
-        if(profileData.emailVerified){
+        if (profileData.emailVerified) {
             emailVerifiedColor = "#cd1e1e"
         }
-        if(profileData.phoneVerified){
+        if (profileData.phoneVerified) {
             phoneVerifiedColor = "#cd1e1e"
         }
         if (!dateString) return 'Не заполнено';
@@ -55,15 +54,19 @@ export const Profile = () => {
                         <div className="info-item">
                             <label>Email:</label>
                             <span>{getValue(profileData.email)}</span>
-                            <span className="verification-status" color={emailVerifiedColor}>
-                                {profileData.emailVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
+                            <span className="verification-status">
+                                <div className={"verification-status-data"} color={emailVerifiedColor}>
+                                    {profileData.emailVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
+                                </div>
                             </span>
                         </div>
                         <div className="info-item">
                             <label>Телефон:</label>
                             <span>{getValue(profileData.phone)}</span>
-                            <span className="verification-status" color={phoneVerifiedColor}>
-                                {profileData.phoneVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
+                            <span className="verification-status">
+                                <div className={"verification-status-data"} color={phoneVerifiedColor}>
+                                    {profileData.phoneVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
+                                </div>
                             </span>
                         </div>
                     </div>
