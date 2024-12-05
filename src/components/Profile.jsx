@@ -19,20 +19,45 @@ export const Profile = () => {
     }
 
     return (
-        <div className="profile-container">
-            <div className="sidebar">
-                <div className="sidebar-header">
-                    <h2>Навигация</h2>
-                </div>
-                <div className="sidebar-buttons">
-                    <button>Мои билеты</button>
-                    <button>Смотреть туры</button>
-                    <button className="logout-btn">Выйти</button>
-                </div>
+
+        <div className="layout-container">
+            <header className="top-bar">
+                <button className="logout-btn">Выйти</button>
+            </header>
+
+            <div className="sub-header">
+
             </div>
-            <div className="profile-content">
-                <div className="profile-card">
-                    <h1>Информация профиля</h1>
+
+            <div className="main-content">
+                <nav className="side-menu">
+                    <ul>
+                        <li>
+                            <button>Мои билеты</button>
+                        </li>
+                        <li>
+                            <button>Смотреть туры</button>
+                        </li>
+                        <li>
+                            <button>Стать сотрудником</button>
+                        </li>
+                        <li>
+                            <button>Стать агентством</button>
+                        </li>
+                        <li>
+                            <button>Служба поддержки</button>
+                        </li>
+                        <li>
+                            <button>FAQ</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div className="profile-section">
+                    <div className="profile-header">
+                        <h1>Информация профиля</h1>
+                        <button className="edit-btn">Редактировать</button>
+                    </div>
                     <div className="profile-info">
                         <div className="info-group">
                             <h2>Основная информация</h2>
