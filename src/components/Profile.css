@@ -55,10 +55,10 @@
     font-size: 0.9em;
 }
 
-.verification-status[data-verified="true"] {
+.verification-status[data-verified=true] {
     color: #1ecd97;
 }
 
-.verification-status[data-verified="false"] {
+.verification-status[data-verified=false] {
     color: #cd1e1e;
 }
