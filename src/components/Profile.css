@@ -7,7 +7,7 @@
 }
 
 .sidebar {
-    width: 350px;
+    width: 250px;
     background-color: rgba(20, 20, 20, 0.95);
     padding: 20px;
     display: flex;
@@ -29,7 +29,7 @@
 
 .sidebar-buttons button {
     margin: 0;
-    width: 100%;
+    width: 70%;
     height: auto;
     padding: 15px;
     border-radius: 8px;
