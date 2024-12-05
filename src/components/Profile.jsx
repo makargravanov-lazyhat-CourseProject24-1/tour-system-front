@@ -18,12 +18,6 @@ export const Profile = () => {
     };
 
     const getValue = (value) => {
-        if (profileData.emailVerified) {
-            emailVerifiedColor = "#cd1e1e"
-        }
-        if (profileData.phoneVerified) {
-            phoneVerifiedColor = "#cd1e1e"
-        }
         return value || 'Не заполнено';
     }
 
@@ -54,7 +48,7 @@ export const Profile = () => {
                             <label>Email:</label>
                             <span>{getValue(profileData.email)}</span>
                             <span className="verification-status">
-                                <div className={"verification-status-data"} color={emailVerifiedColor}>
+                                <div className={`verification-status-data ${profileData.emailVerified ? 'verified' : 'not-verified'}`}>
                                     {profileData.emailVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
                                 </div>
                             </span>
@@ -63,7 +57,7 @@ export const Profile = () => {
                             <label>Телефон:</label>
                             <span>{getValue(profileData.phone)}</span>
                             <span className="verification-status">
-                                <div className={"verification-status-data"} color={phoneVerifiedColor}>
+                                <div className={`verification-status-data ${profileData.phoneVerified ? 'verified' : 'not-verified'}`}>
                                     {profileData.phoneVerified ? '✓ Подтвержден' : '⚠ Не подтвержден'}
                                 </div>
                             </span>

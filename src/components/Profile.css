@@ -57,3 +57,10 @@
 .verification-status-data {
     color: #fff;
 }
+.verified {
+    color: #1ecd97;
+}
+
+.not-verified {
+    color: #cd1e1e;
+}
