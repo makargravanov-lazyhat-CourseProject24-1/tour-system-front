@@ -30,7 +30,7 @@ export const Profile = () => {
                     <button className="logout-btn">Выйти</button>
                 </div>
             </div>
-            <div className="profile-container">
+            <div className="profile-content">
                 <div className="profile-card">
                     <h1>Личный кабинет</h1>
                     <div className="profile-info">
