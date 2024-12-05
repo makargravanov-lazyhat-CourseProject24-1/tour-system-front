@@ -64,7 +64,7 @@
 }
 
 .edit-btn {
-    background-color: rgba(23, 26, 32, 0.41);
+    background-color: rgb(39, 39, 48);
     color: #ccc;
     border: none;
     padding: 8px 15px;
@@ -76,7 +76,7 @@
 }
 
 .logout-btn {
-    background-color: #1a1a1a;
+    background-color: #020202;
     color: #ccc;
     border: none;
     padding: 3px 5px;
