@@ -1,6 +1,7 @@
 import {Navigate, useLocation} from 'react-router-dom';
 import classes from './Profile.module.css';
 
+
 export const Profile = () => {
     const location = useLocation();
     const profileData = location.state?.profileData;
