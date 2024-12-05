@@ -11,6 +11,7 @@
     background-color: rgba(20, 20, 20, 0.95);
     padding: 20px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     border-right: 1px solid #1ecd97;
 }
@@ -28,6 +29,7 @@
 }
 
 .sidebar-buttons button {
+    align-items: center;
     margin: 0;
     width: 70%;
     height: auto;

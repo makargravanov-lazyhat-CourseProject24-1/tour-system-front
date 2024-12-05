@@ -32,7 +32,7 @@ export const Profile = () => {
             </div>
             <div className="profile-content">
                 <div className="profile-card">
-                    <h1>Личный кабинет</h1>
+                    <h1>Информация профиля</h1>
                     <div className="profile-info">
                         <div className="info-group">
                             <h2>Основная информация</h2>
