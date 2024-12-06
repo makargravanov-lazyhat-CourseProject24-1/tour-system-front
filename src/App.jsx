@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {LogReg} from "./components/LogReg.jsx";
 import {Profile} from "./components/Profile.jsx";
-import "./App.css"
 
 function App() {
   return (
