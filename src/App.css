@@ -1,0 +1,15 @@
+.cursor {
+    display: inline-block;
+    width: 1px;
+    font-size: 24px;
+    color: #1ecd97;
+    margin-left: 2px;
+}
+
+.cursor.visible {
+    opacity: 1;
+}
+
+.cursor:not(.visible) {
+    opacity: 0;
+}
