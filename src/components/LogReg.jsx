@@ -144,7 +144,7 @@ export const LogReg = () => {
                     <div className={classes.jettours}>Напишите свою историю вместе с JetTours</div>
                     <div className={classes.typingtext}>
                         {displayedText}
-                        <span className={`cursor ${cursorVisible ? 'visible' : ''}`}>|</span>
+                        <span className={cursorVisible ? classes.cursor.visible : classes.cursor}>|</span>
                     </div>
                     <button className={classes.joinbutton} onClick={handleJoinClick}>Присоединиться</button>
                 </div>
