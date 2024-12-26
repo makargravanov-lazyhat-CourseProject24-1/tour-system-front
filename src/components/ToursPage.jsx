@@ -37,7 +37,7 @@ export const ToursPage = () => {
         navigate('/my/agencies')
     }
     const tourrs = async () =>{
-        navigate('/my/tours')
+        navigate('/tours')
     }
 
     const formatDate = (dateString) => {

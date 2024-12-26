@@ -89,7 +89,7 @@ export const AgenciesPage = () => {
         navigate('/my/agencies')
     }
     const tours = async () =>{
-        navigate('/my/tours')
+        navigate('/tours')
     }
     const formatDate = (dateString) => {
         return new Date(dateString).toLocaleString();

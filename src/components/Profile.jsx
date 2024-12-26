@@ -15,7 +15,7 @@ export const Profile = () => {
         navigate('/my/agencies')
     }
     const tours = async () =>{
-        navigate('/my/tours')
+        navigate('/tours')
     }
 
 
