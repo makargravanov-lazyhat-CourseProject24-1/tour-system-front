@@ -10,7 +10,9 @@
 
 .tourCard {
     background-color: #17171A;
+    padding: 20px;
     border-radius: 10px;
+    height: 180px;
     border: 1px solid #1ecd97;
     display: flex;
     flex-direction: column;
@@ -24,6 +26,7 @@
     bottom: 20px;
     left: 20px;
     right: 20px;
+    margin-top: 30px;
     padding: 10px 15px;
     border-radius: .66rem;
     background-color: #1ecd97;
