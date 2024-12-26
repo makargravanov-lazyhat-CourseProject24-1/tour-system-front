@@ -1,0 +1,350 @@
+/* Наследуем базовые стили из AgenciesPage */
+/* ... базовые стили ... */
+
+.toursGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tourCard {
+    background-color: #17171A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1ecd97;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tourCard h2 {
+    color: #1ecd97;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.tourDetails {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.tourDetails p {
+    margin: 5px 0;
+}
+
+.tourMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.tourMeta span {
+    background-color: #1F1F23;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.createForm {
+    background-color: #17171A;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.createForm input,
+.createForm textarea {
+    padding: 8px;
+    border-radius: .66rem;
+    border: 1px solid #1ecd97;
+    background-color: #1F1F23;
+    color: #fff;
+}
+
+.createForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.createForm button {
+    padding: 8px 15px;
+    border-radius: .66rem;
+    background-color: #1ecd97;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.createForm button:hover {
+    background-color: #19a77a;
+}
+
+.noTours {
+    color: #ccc;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+.createForm {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.createForm input {
+    padding: 8px;
+    border-radius: .66rem;
+    border: 1px solid #1ecd97;
+    background-color: #1F1F23;
+    color: #fff;
+}
+
+.createForm button {
+    padding: 8px 15px;
+    border-radius: .66rem;
+    background-color: #1ecd97;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.createForm button:hover {
+    background-color: #19a77a;
+}
+
+.agenciesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.agencyCard {
+    background-color: #17171A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1ecd97;
+}
+
+.agencyCard h2 {
+    color: #1ecd97;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.agencyCard p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.noAgencies {
+    color: #ccc;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+
+.layoutcontainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+.topbar {
+    background-color: #020202;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subheader {
+    background-color: #17171A;
+    height: 40px;
+}
+
+.maincontent {
+    background-color: #1F1F23;
+    display: flex;
+    flex: 1;
+}
+
+.sidemenu {
+    width: 250px;
+    padding: 20px;
+}
+
+.sidemenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidemenu button {
+    border-radius: .66rem;
+    height: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    margin: 2px 0;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+.sidemenu button:hover {
+    background-color: #353535;
+}
+
+.profilesection {
+    flex: 1;
+    padding: 20px;
+}
+
+.profileheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.editbtn {
+    margin-left: 30%;
+    border-radius: .66rem;
+    height: 20px;
+    background-color: #1F1F23;
+    color: #ccc;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.editbtn:hover {
+    background-color: #353535;
+}
+
+.logoutbtn {
+    border-radius: .66rem;
+    height: 20px;
+    background-color: #020202;
+    color: #ccc;
+    border: none;
+    padding: 3px 5px;
+    margin-left: 90%;
+    font-size: 14px;
+}
+
+.logoutbtn:hover {
+    background-color: #252525;
+}
+
+button {
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+h1 {
+    font-size: 25px;
+    color: #1ecd97;
+}
+.infogroup {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1ecd97;
+    padding-bottom: 20px;
+}
+
+
+.infogroup h2 {
+    color: #1ecd97;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+
+.infoitem {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+
+.infoitem label {
+    min-width: 200px;
+    color: #888;
+}
+
+
+.infoitem span {
+    color: #fff;
+}
+
+.infoitem label {
+    font-size: 14px;
+}
+
+.infoitem span {
+    font-size: 14px;
+}
+.verificationstatus {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+.verificationstatusdata {
+    color: #fff;
+}
+.verified {
+    color: #1ecd97;
+}
+
+.notverified {
+    color: #cd1e1e;
+}
+
+
+.bankAccountForm {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bankAccountForm input {
+    padding: 8px;
+    border-radius: .66rem;
+    border: 1px solid #1ecd97;
+    background-color: #1F1F23;
+    color: #fff;
+    width: 100%;
+}
+
+.bankAccountForm button {
+    padding: 8px 15px;
+    border-radius: .66rem;
+    background-color: #1ecd97;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bankAccountForm button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.bankAccountForm button:hover:not(:disabled) {
+    background-color: #19a77a;
+}
