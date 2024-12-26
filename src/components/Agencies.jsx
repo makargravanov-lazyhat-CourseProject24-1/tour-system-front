@@ -85,7 +85,12 @@ export const AgenciesPage = () => {
             [agencyId]: value
         }));
     };
-
+    const agenciess = async () =>{
+        navigate('/my/agencies')
+    }
+    const tours = async () =>{
+        navigate('/my/tours')
+    }
     const formatDate = (dateString) => {
         return new Date(dateString).toLocaleString();
     };
@@ -101,11 +106,21 @@ export const AgenciesPage = () => {
             <div className={classes.maincontent}>
                 <nav className={classes.sidemenu}>
                     <ul>
-                        <li><button>Мои билеты</button></li>
-                        <li><button>Смотреть туры</button></li>
-                        <li><button>Агентства</button></li>
-                        <li><button>Служба поддержки</button></li>
-                        <li><button>FAQ</button></li>
+                        <li>
+                            <button>Мои билеты</button>
+                        </li>
+                        <li>
+                            <button onClick={tours}>Смотреть туры</button>
+                        </li>
+                        <li>
+                            <button onClick={agenciess}>Агентства</button>
+                        </li>
+                        <li>
+                            <button>Служба поддержки</button>
+                        </li>
+                        <li>
+                            <button>FAQ</button>
+                        </li>
                     </ul>
                 </nav>
 

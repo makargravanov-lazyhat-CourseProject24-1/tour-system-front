@@ -14,6 +14,10 @@ export const Profile = () => {
     const agencies = async () =>{
         navigate('/my/agencies')
     }
+    const tours = async () =>{
+        navigate('/my/tours')
+    }
+
 
     const formatDate = (dateString) => {
         if (!dateString) return 'Не заполнено';
@@ -42,7 +46,7 @@ export const Profile = () => {
                             <button>Мои билеты</button>
                         </li>
                         <li>
-                            <button>Смотреть туры</button>
+                            <button onClick={tours}>Смотреть туры</button>
                         </li>
                         <li>
                             <button onClick={agencies}>Агентства</button>
