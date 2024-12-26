@@ -44,6 +44,34 @@ export const ToursPage = () => {
         return new Date(dateString).toLocaleDateString();
     };
 
+    const [isBooking, setIsBooking] = useState({});
+
+    const bookTour = async (tour) => {
+        setIsBooking(prev => ({ ...prev, [tour.id]: true }));
+        try {
+            const response = await fetch('https://api.lazyhat.ru/bff/api/v1/secured/regtour', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include',
+                body: JSON.stringify(tour)
+            });
+
+            if (response.ok) {
+                alert('Тур успешно забронирован!');
+            } else {
+                alert('Ошибка при бронировании тура');
+            }
+        } catch (error) {
+            console.error('Error booking tour:', error);
+            alert('Ошибка при бронировании тура');
+        } finally {
+            setIsBooking(prev => ({ ...prev, [tour.id]: false }));
+        }
+    };
+
+
     return (
         <div className={classes.layoutcontainer}>
             <header className={classes.topbar}>
@@ -91,6 +119,13 @@ export const ToursPage = () => {
                                         <span>ID комнаты: {tour.roomId}</span>
                                         <span>ID питания: {tour.nutritionId}</span>
                                     </div>
+                                    <button
+                                        className={classes.bookButton}
+                                        onClick={() => bookTour(tour)}
+                                        disabled={isBooking[tour.id]}
+                                    >
+                                        {isBooking[tour.id] ? 'Бронирование...' : 'Забронировать билет'}
+                                    </button>
                                 </div>
                             ))
                         )}
