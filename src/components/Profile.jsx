@@ -1,13 +1,18 @@
-import {Navigate, useLocation} from 'react-router-dom';
+import {Navigate, useLocation, useNavigate} from 'react-router-dom';
 import classes from './Profile.module.css';
 
 
 export const Profile = () => {
     const location = useLocation();
     const profileData = location.state?.profileData;
+    const navigate = useNavigate();
 
     if (!profileData) {
         return <Navigate to="/"/>;
+    }
+
+    const agencies = async () =>{
+        navigate('/my/agencies')
     }
 
     const formatDate = (dateString) => {
@@ -40,10 +45,7 @@ export const Profile = () => {
                             <button>Смотреть туры</button>
                         </li>
                         <li>
-                            <button>Стать сотрудником</button>
-                        </li>
-                        <li>
-                            <button>Стать агентством</button>
+                            <button onClick={agencies}>Агентства</button>
                         </li>
                         <li>
                             <button>Служба поддержки</button>
