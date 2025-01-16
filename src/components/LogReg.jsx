@@ -100,7 +100,9 @@ export const LogReg = () => {
             alert('Ошибка при отправке данных');
         }
     };
-
+    const tickets = async () =>{
+        navigate('/tickets')
+    }
     const handleLogin = async () => {
         try {
             const response = await fetch('https://api.lazyhat.ru/bff/api/v1/open/login', {

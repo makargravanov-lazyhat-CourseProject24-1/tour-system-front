@@ -71,7 +71,9 @@ export const ToursPage = () => {
         }
     };
 
-
+    const tickets = async () =>{
+        navigate('/tickets')
+    }
     return (
         <div className={classes.layoutcontainer}>
             <header className={classes.topbar}>
@@ -84,7 +86,7 @@ export const ToursPage = () => {
                 <nav className={classes.sidemenu}>
                     <ul>
                         <li>
-                            <button>Мои билеты</button>
+                            <button onClick={tickets}>Мои билеты</button>
                         </li>
                         <li>
                             <button onClick={tourrs}>Смотреть туры</button>

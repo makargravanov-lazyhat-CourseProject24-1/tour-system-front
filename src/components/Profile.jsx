@@ -28,6 +28,10 @@ export const Profile = () => {
         return value || 'Не заполнено';
     }
 
+    const tickets = async () =>{
+        navigate('/tickets')
+    }
+
     return (
 
         <div className={classes.layoutcontainer}>
@@ -43,7 +47,7 @@ export const Profile = () => {
                 <nav className={classes.sidemenu}>
                     <ul>
                         <li>
-                            <button>Мои билеты</button>
+                            <button onClick={tickets}>Мои билеты</button>
                         </li>
                         <li>
                             <button onClick={tours}>Смотреть туры</button>

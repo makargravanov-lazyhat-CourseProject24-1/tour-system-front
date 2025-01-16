@@ -380,3 +380,69 @@ h1 {
 .bankAccountForm button:hover:not(:disabled) {
     background-color: #19a77a;
 }
+
+
+.ticketsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ticketCard {
+    background-color: #17171A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1ecd97;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ticketHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paid {
+    color: #1ecd97;
+    font-weight: bold;
+}
+
+.unpaid {
+    color: #cd1e1e;
+    font-weight: bold;
+}
+
+.ticketDetails {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.ticketDetails p {
+    margin: 5px 0;
+}
+
+.payButton {
+    padding: 10px 15px;
+    border-radius: .66rem;
+    background-color: #1ecd97;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
+}
+
+.payButton:hover {
+    background-color: #19a77a;
+}
+
+.noTickets {
+    color: #ccc;
+    text-align: center;
+    grid-column: 1 / -1;
+    padding: 20px;
+}

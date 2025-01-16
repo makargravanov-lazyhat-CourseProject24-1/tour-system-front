@@ -4,6 +4,7 @@ import {Profile} from "./components/Profile.jsx";
 import "./App.css"
 import {AgenciesPage} from "./components/Agencies.jsx";
 import {ToursPage} from "./components/ToursPage.jsx";
+import {TicketsPage} from "./components/TicketsPage.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
                   <Route path="/my/profile" element={<Profile/>}/>
                   <Route path="/my/agencies" element={<AgenciesPage/>}/>
                   <Route path="/tours" element={<ToursPage/>}/>
+                  <Route path="/tickets" element={<TicketsPage/>}/>
               </Routes>
           </Router>
       </div>
