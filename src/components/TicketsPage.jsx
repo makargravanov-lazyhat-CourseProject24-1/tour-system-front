@@ -45,8 +45,9 @@ export const TicketsPage = () => {
 
     const openPaymentLink = (link) => {
         try {
-            const url = new URL(link);
-            window.open(url.href, '_blank', 'noopener,noreferrer');
+            const parsedData = JSON.parse(decodeURIComponent(link));
+            const actualUrl = parsedData.body;
+            window.open(actualUrl, '_blank', 'noopener,noreferrer');
         } catch (e) {
             window.open(link, '_blank', 'noopener,noreferrer');
         }
