@@ -17,9 +17,10 @@ export const TicketsPage = () => {
                 credentials: 'include'
             });
             const data = await response.json();
-            setTickets(data);
+            setTickets(data.body || []);
         } catch (error) {
             console.error('Error fetching tickets:', error);
+            setTickets([]);
         }
     };
 
