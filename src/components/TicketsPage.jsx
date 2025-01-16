@@ -44,7 +44,12 @@ export const TicketsPage = () => {
     };
 
     const openPaymentLink = (link) => {
-        window.open(link, '_blank');
+        try {
+            const url = new URL(link);
+            window.open(url.href, '_blank', 'noopener,noreferrer');
+        } catch (e) {
+            window.open(link, '_blank', 'noopener,noreferrer');
+        }
     };
 
     const agencies = async () => {
